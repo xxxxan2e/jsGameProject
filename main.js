@@ -32,8 +32,9 @@ function render() { // 이미지를 불러오는 함수
 } 
 
 function main() {
-    
+    render()
+    requestAnimationFrame(main) // 화면을 계속해서 호출해준다. 애니메이션과 렌더를 반복함.
 }
 
-loadImage()
-render()
+loadImage();
+main();
