@@ -31,7 +31,9 @@ function render() { // 이미지를 불러오는 함수
     ctx.drawImage(galaxybackgroundImage, 0, 0, canvas.width, canvas.height) // 무슨 이미지를 어디에(x,y 좌표) 가로, 세로 크기
 } 
 
-
+function main() {
+    
+}
 
 loadImage()
 render()
