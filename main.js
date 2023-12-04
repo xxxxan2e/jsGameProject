@@ -53,6 +53,12 @@ function update() {
     if(37 in keysDown) { // left.
         spaceshipX -= 5;
     }
+    if(spaceshipX <=0) {
+        spaceshipX=0
+    }
+    if(spaceshipX >= canvas.width-64) {
+        spaceshipX=canvas.width - 64;
+    }
 
     // 우주선의 좌표값이 무한대로 업데이트가 되는 게 아닌! 경기장 안에서만 있게 하려면?
     
